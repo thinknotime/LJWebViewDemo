@@ -7,7 +7,9 @@ import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
 
-
+/**
+ * this is a test
+ */
 
 public class MainActivity extends Activity{
 
