@@ -23,32 +23,27 @@ public class LJWebView extends RelativeLayout{
 	
 	private Context context;
 	
-	private WebView mWebView = null;  //
-	private ProgressBar progressBar = null;  //ˮƽ������
-	private RelativeLayout progressBar_circle = null;  //����Բ�ν������Ĳ���
-	private int barHeight = 8;  //ˮƽ�������ĸ�
-	private boolean isAdd = false;  //�ж��Ƿ��Ѿ����������
-	private int progressStyle = Horizontal;  //��������ʽ,Circle��ʾΪԲ�Σ�Horizontal��ʾΪˮƽ
-	
+	private WebView mWebView = null;
+	private ProgressBar progressBar = null;
+	private RelativeLayout progressBar_circle = null;
+	private int barHeight = 8;
+	private boolean isAdd = false;
+	private int progressStyle = Horizontal;
 
-	
 	public LJWebView(Context context) {
 		super(context);
-		// TODO Auto-generated constructor stub
 		this.context = context;
 		init();
 	}
 
 	public LJWebView(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		// TODO Auto-generated constructor stub
 		this.context = context;
 		init();
 	}
 
 	public LJWebView(Context context, AttributeSet attrs, int defStyle) {
 		super(context, attrs, defStyle);
-		// TODO Auto-generated constructor stub
 		this.context = context;
 		init();
 	}
@@ -61,7 +56,6 @@ public class LJWebView extends RelativeLayout{
 
 			@Override
 			public void onProgressChanged(WebView view, int newProgress) {
-				// TODO Auto-generated method stub
 				super.onProgressChanged(view, newProgress);
 				if(newProgress == 100){
 					if(progressStyle == Horizontal){

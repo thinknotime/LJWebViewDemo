@@ -14,10 +14,8 @@ public class Activity_Circle extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_webview);
-		
 		mLJWebView = (LJWebView) findViewById(R.id.web);
 		mLJWebView.setProgressStyle(LJWebView.Circle);
 		mLJWebView.setBarHeight(8);
@@ -28,17 +26,13 @@ public class Activity_Circle extends Activity{
 		mLJWebView.setJavaScriptEnabled(true);
 		mLJWebView.setCacheMode(WebSettings.LOAD_NO_CACHE);		
 		mLJWebView.setWebViewClient(new WebViewClient() {
-			//ÖØÐ´´Ë·½·¨£¬ä¯ÀÀÆ÷ÄÚ²¿Ìø×ª
+			//ï¿½ï¿½Ð´ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú²ï¿½ï¿½ï¿½×ª
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
-				System.out.println("ÌøµÄURL =" + url);
 				view.loadUrl(url);
 				return true;
 			}
 		});
-
 		mLJWebView.loadUrl(url);
-
-
 	}
 
 }

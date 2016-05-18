@@ -14,10 +14,8 @@ public class Activity_Horizontal extends Activity{
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
-		// TODO Auto-generated method stub
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_webview);
-		
 		mLJWebView = (LJWebView) findViewById(R.id.web);
 		mLJWebView.setBarHeight(8);
 		mLJWebView.setClickable(true);
@@ -29,17 +27,11 @@ public class Activity_Horizontal extends Activity{
 		mLJWebView.setWebViewClient(new WebViewClient() {
 
 			public boolean shouldOverrideUrlLoading(WebView view, String url) {
-				
-				System.out.println("ÌøµÄURL =" + url);
-				
 				view.loadUrl(url);
 				return true;
 			}
 		});
-
 		mLJWebView.loadUrl(url);
-
-
 	}
 
 }
