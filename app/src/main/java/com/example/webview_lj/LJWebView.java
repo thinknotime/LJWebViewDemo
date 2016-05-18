@@ -13,17 +13,7 @@ import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
 
 /**
- * 
- * ±¸×¢:
- * ´ËLJWebView¼Ì³Ğ×ÔRelativielayout,ËùÒÔ»áµ¼ÖÂ¶ªÊ§Ò»¸öWebViewµÄÊôĞÔ£¬Èç¹û´ó¼Ò
- * ÔÚÏîÄ¿ÖĞĞèÒªÓÃµ½£¬¿ÉÔÚ´ËÀàÖĞ¼ÓÈë£¬È»ºóµ÷ÓÃ¼´¿É£¬¿É²Î¿¼
- * 	public void setClickable(boolean value){
-		mWebView.setClickable(value);
-	}
- * Õâ¸ö·½·¨µÄ¶¨ÒåºÍµ÷ÓÃ
- * 
  * @author Administrator
- *
  */
 @SuppressLint({ "SetJavaScriptEnabled", "InflateParams" }) 
 public class LJWebView extends RelativeLayout{
@@ -34,11 +24,11 @@ public class LJWebView extends RelativeLayout{
 	private Context context;
 	
 	private WebView mWebView = null;  //
-	private ProgressBar progressBar = null;  //Ë®Æ½½ø¶ÈÌõ
-	private RelativeLayout progressBar_circle = null;  //°üº¬Ô²ĞÎ½ø¶ÈÌõµÄ²¼¾Ö
-	private int barHeight = 8;  //Ë®Æ½½ø¶ÈÌõµÄ¸ß
-	private boolean isAdd = false;  //ÅĞ¶ÏÊÇ·ñÒÑ¾­¼ÓÈë½ø¶ÈÌõ
-	private int progressStyle = Horizontal;  //½ø¶ÈÌõÑùÊ½,Circle±íÊ¾ÎªÔ²ĞÎ£¬Horizontal±íÊ¾ÎªË®Æ½
+	private ProgressBar progressBar = null;  //Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private RelativeLayout progressBar_circle = null;  //ï¿½ï¿½ï¿½ï¿½Ô²ï¿½Î½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä²ï¿½ï¿½ï¿½
+	private int barHeight = 8;  //Ë®Æ½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½
+	private boolean isAdd = false;  //ï¿½Ğ¶ï¿½ï¿½Ç·ï¿½ï¿½Ñ¾ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+	private int progressStyle = Horizontal;  //ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê½,Circleï¿½ï¿½Ê¾ÎªÔ²ï¿½Î£ï¿½Horizontalï¿½ï¿½Ê¾ÎªË®Æ½
 	
 
 	

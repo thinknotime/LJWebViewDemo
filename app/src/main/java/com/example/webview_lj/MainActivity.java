@@ -8,7 +8,8 @@ import android.view.View.OnClickListener;
 import android.widget.Button;
 
 /**
- * this is a test (cao)
+ * this is a test (
+ * @author Administrator
  */
 
 public class MainActivity extends Activity{
