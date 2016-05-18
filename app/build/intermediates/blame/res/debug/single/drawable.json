@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\Android_Studio\\project\\LJWebView\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_bar_horizontal.xml",
+        "source": "D:\\Android_Studio\\project\\LJWebView\\app\\src\\main\\res\\drawable\\progress_bar_horizontal.xml"
+    },
+    {
+        "merged": "D:\\Android_Studio\\project\\LJWebView\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\progress_bar_circle.xml",
+        "source": "D:\\Android_Studio\\project\\LJWebView\\app\\src\\main\\res\\drawable\\progress_bar_circle.xml"
+    }
+]
